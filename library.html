@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Recursos | Observatorio TIC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#003366] rounded flex items-center justify-center text-white font-bold text-xl">O</div>
+                        <div>
+                            <span class="block text-lg font-bold leading-none text-[#003366]">OBSERVATORIO TIC</span>
+                            <span class="text-xs tracking-widest text-slate-500 font-medium">GOBIERNO DEL PARAGUAY</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-blue-900 font-medium">Intelligence Hub</a>
+                    <a href="index.html#analytics" class="text-slate-600 hover:text-blue-900 font-medium italic">Analytics Engine</a>
+                    <a href="library.html" class="text-blue-900 font-bold border-b-2 border-blue-900">Resource Library</a>
+                    <a href="sandbox.html" class="bg-amber-500 hover:bg-amber-600 text-slate-900 px-5 py-2.5 rounded-full font-bold shadow-sm transition-all">
+                        <i class="fa-solid fa-flask-vial mr-2"></i>Regulatory Sandbox
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-slate-100 border-b border-slate-200 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-extrabold text-slate-900 flex items-center gap-3">
+                <i class="fa-solid fa-book-open text-blue-600"></i>
+                Biblioteca de Recursos y Documentación
+            </h1>
+            <p class="text-slate-600 mt-2">Acceda a metodologías, informes técnicos, estudios de caso y resultados de encuestas TIC.</p>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row gap-8">
+        
+        <aside class="w-full md:w-64 flex-shrink-0">
+            <div class="sticky top-28 space-y-6">
+                <div>
+                    <h3 class="font-bold text-sm uppercase tracking-wider text-slate-400 mb-4">Categorías</h3>
+                    <div class="space-y-2">
+                        <label class="flex items-center gap-2 text-sm text-slate-700 hover:text-blue-600 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600" checked> Metodologías
+                        </label>
+                        <label class="flex items-center gap-2 text-sm text-slate-700 hover:text-blue-600 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600" checked> Informes (White Papers)
+                        </label>
+                        <label class="flex items-center gap-2 text-sm text-slate-700 hover:text-blue-600 cursor-pointer">
+                            <input type="checkbox" class="rounded text-blue-600" checked> Encuestas y Microdatos
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pt-6 border-t border-slate-200">
+                    <h3 class="font-bold text-sm uppercase tracking-wider text-slate-400 mb-4">Ejes Estratégicos</h3>
+                    <select class="w-full bg-white border border-slate-300 rounded-md p-2 text-sm">
+                        <option>Todos los ejes</option>
+                        <option>Inclusión y Acceso</option>
+                        <option>Gobierno Digital</option>
+                        <option>Infraestructura y Seguridad</option>
+                        <option>Economía Digital</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+
+        <main class="flex-grow">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-file-pdf text-2xl"></i>
+                        </div>
+                        <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">PDF | 2.4 MB</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-blue-600 transition">Metodología de Medición: Economía Digital 2026</h3>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">Documento técnico detallando las variables de inversión y ejecución presupuestaria TIC.</p>
+                    <a href="#" class="text-sm font-bold text-blue-600 flex items-center gap-2">
+                        Descargar Recurso <i class="fa-solid fa-download text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-green-50 text-green-600 rounded-lg group-hover:bg-green-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-file-csv text-2xl"></i>
+                        </div>
+                        <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">CSV | 15.1 MB</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-green-600 transition">Microdatos: Encuesta de Acceso Digital (Hogares)</h3>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">Base de datos anonimizada para análisis comparativo regional y por departamento.</p>
+                    <a href="#" class="text-sm font-bold text-green-600 flex items-center gap-2">
+                        Descargar Recurso <i class="fa-solid fa-download text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition group">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-amber-50 text-amber-600 rounded-lg group-hover:bg-amber-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-file-lines text-2xl"></i>
+                        </div>
+                        <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">DOCX | 1.1 MB</span>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-amber-600 transition">Marco de Referencia: Sandbox de Inteligencia Artificial</h3>
+                    <p class="text-sm text-slate-500 mt-2 mb-4">Lineamientos éticos y regulatorios para los experimentos en el entorno Sandbox.</p>
+                    <a href="#" class="text-sm font-bold text-amber-600 flex items-center gap-2">
+                        Descargar Recurso <i class="fa-solid fa-
