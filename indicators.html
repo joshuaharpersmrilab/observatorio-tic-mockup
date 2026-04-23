@@ -1,89 +1,43 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <title>Indicadores Estratégicos | OBI²</title>
-</head>
-<body class="bg-slate-50 text-slate-900 font-sans">
-
-    <div class="bg-red-100 text-red-800 text-[10px] font-bold text-center py-1 uppercase tracking-widest border-b border-red-200">
-        Entorno de Pruebas - Propiedad de [Name of Owner] - No Oficial
+<div class="md:col-span-2 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+    <h2 class="text-purple-600 font-bold uppercase tracking-widest mb-6 border-b pb-2">3. Infraestructura y Seguridad</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Disponibilidad Datacenter</p>
+            <span class="text-3xl font-black text-slate-900">99.98%</span>
+            <p class="text-[10px] text-green-500 font-bold">Uptime Global</p>
+        </div>
+        <div>
+            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Incidentes Mitigados</p>
+            <span class="text-3xl font-black text-slate-900">1,240</span>
+            <p class="text-[10px] text-blue-500 font-bold">SOC Report (Mensual)</p>
+        </div>
+        <div>
+            <p class="text-xs text-slate-400 font-bold uppercase tracking-tighter">Madurez Ciberseguridad</p>
+            <span class="text-3xl font-black text-slate-900">3.8/5</span>
+            <p class="text-[10px] text-purple-500 font-bold">Índice UIT</p>
+        </div>
     </div>
 
-    <nav class="bg-[#1a202c] text-white p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="font-black text-xl flex items-center gap-2">
-                <span class="bg-amber-500 text-slate-900 px-2 py-1 rounded">OBI²</span> 
-                <span class="text-sm font-light uppercase tracking-widest">Intelligence</span>
-            </a>
-            <a href="index.html" class="text-xs hover:text-amber-400">← VOLVER AL INICIO</a>
+    <div class="bg-slate-900 rounded-xl p-6 text-white overflow-hidden relative">
+        <div class="flex justify-between items-center mb-6">
+            <h3 class="text-xs font-black uppercase tracking-[0.2em] text-amber-500">Visualización de Resiliencia Crítica</h3>
+            <span class="text-[9px] font-mono bg-slate-800 px-2 py-1 rounded border border-slate-700">FEED: DATACENTER_API</span>
         </div>
-    </nav>
-
-    <main class="max-w-7xl mx-auto py-12 px-4">
-        <h1 class="text-4xl font-black mb-8 border-l-8 border-amber-500 pl-6 uppercase tracking-tight">
-            Tablero de Indicadores Críticos <br/>
-            <span class="text-slate-400 text-lg font-normal italic">Alineación con Préstamo 4650/OC-PR</span>
-        </h1>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-blue-600 font-bold uppercase tracking-widest mb-6 border-b pb-2">1. Inclusión Digital</h2>
-                <div class="space-y-6">
-                    <div class="flex justify-between items-end">
-                        <div>
-                            <p class="text-xs text-slate-400 font-bold uppercase">Penetración Regional</p>
-                            <p class="text-sm font-medium text-slate-700">Brecha Urbana vs. Rural</p>
-                        </div>
-                        <div class="text-right">
-                            <span class="text-2xl font-black">37.4%</span>
-                            <p class="text-[10px] text-red-500 font-bold">Diferencial Crítico</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-end">
-                        <div>
-                            <p class="text-xs text-slate-400 font-bold uppercase">Red de Infocentros</p>
-                            <p class="text-sm font-medium text-slate-700">Ciudadanos capacitados (Prod. 12)</p>
-                        </div>
-                        <div class="text-right">
-                            <span class="text-2xl font-black">12.5k</span>
-                            <p class="text-[10px] text-green-500 font-bold">+15% anual</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-green-600 font-bold uppercase tracking-widest mb-6 border-b pb-2">2. Gobierno Digital</h2>
-                <div class="space-y-6">
-                    <div class="flex justify-between items-end">
-                        <div>
-                            <p class="text-xs text-slate-400 font-bold uppercase">Ahorro de Tiempo/Costo</p>
-                            <p class="text-sm font-medium text-slate-700">Impacto en trámites digitales</p>
-                        </div>
-                        <div class="text-right">
-                            <span class="text-2xl font-black">US$ 4.2M</span>
-                            <p class="text-[10px] text-blue-500 font-bold">Ahorro Estimado</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-end">
-                        <div>
-                            <p class="text-xs text-slate-400 font-bold uppercase">Adopción de Trámites</p>
-                            <p class="text-sm font-medium text-slate-700">Digital vs. Presencial</p>
-                        </div>
-                        <div class="text-right">
-                            <span class="text-2xl font-black">64%</span>
-                            <div class="w-20 bg-slate-100 h-1 mt-1"><div class="bg-green-500 h-1" style="width: 64%"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-    </main>
-
-</body>
-</html>
+        
+        <div class="flex items-end gap-2 h-24 mb-4">
+            <div class="bg-blue-500/40 w-full h-full rounded-t"></div>
+            <div class="bg-blue-500/60 w-full h-5/6 rounded-t"></div>
+            <div class="bg-blue-500/80 w-full h-full rounded-t"></div>
+            <div class="bg-amber-500 w-full h-2/3 rounded-t animate-pulse"></div> <div class="bg-slate-700 w-full h-full rounded-t"></div>
+        </div>
+        
+        <p class="text-[10px] text-slate-400 italic text-center">Monitoreo de tráfico y latencia de salida internacional (Préstamo 4650 Componente 3)</p>
+        
+        <div class="mt-6 text-center">
+            <button class="text-[10px] font-black border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-slate-900 transition uppercase tracking-widest">
+                Expandir en Metabase <i class="fa-solid fa-external-link ml-1 text-[8px]"></i>
+            </button>
+        </div>
+    </div>
+</div>
